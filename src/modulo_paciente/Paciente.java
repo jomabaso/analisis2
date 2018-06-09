@@ -9,6 +9,6 @@ package modulo_paciente;
  *
  * @author Mr josh
  */
-public class paciente {
+public class Paciente {
     
 }

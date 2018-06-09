@@ -20,7 +20,7 @@ public class Fabrica implements FabricaInterfaz {
             miproducto = new Paciente();
             //miproducto.setForma(forma);
         }else if(producto_nombre.equals("receta")){
-            miproducto = new receta();
+            miproducto = new Receta();
         }
         return miproducto;
         

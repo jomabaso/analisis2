@@ -4,16 +4,19 @@
  * and open the template in the editor.
  */
 package moduloUsuarios;
-import modulo_paciente.*;
+import moduloDoctores.*;
 /**
  *
  * @author Justo
  */
 public class FabricaUsuarios  implements FabricaUsuariosInterfaz{
     public  Usuario creacionUsuario(String usuario, String password,int tipo){
-        Usuario usuario_nuevo = new Usuario(usuario,password);
+        Usuario usuario_nuevo = new Usuario();
         if(tipo==1){
-           usuario_nuevo   = new Paciente();
+           usuario_nuevo   = new Doctor(usuario,password);
+        }
+        else if(tipo==2){
+            usuario_nuevo   = new Doctor(usuario,password);
         }
        
         return usuario_nuevo;

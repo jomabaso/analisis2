@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package sistemaclinicasad2;
-
+import moduloUsuarios.*;
 /**
  *
  * @author Justo
@@ -16,6 +16,12 @@ public class SistemaClinicasAD2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        FabricaUsuariosInterfaz fabrica = new FabricaUsuarios();
+        Usuario doctor = fabrica.creacionUsuario("doctor", "contraDoc", 1);
+         
+        
+        
+        
     }
     
 }
